@@ -7,6 +7,7 @@ public class Person {
 	private String name;
 	private int age;
 	private House[] houses;
+	private Nation nation;
 	
 	
 	public Person() {
@@ -38,6 +39,14 @@ public class Person {
 	public void setHouses(House[] houses) {
 		this.houses = houses;
 	}
+	
+	public Nation getNation() {
+		return nation;
+	}
+
+	public void setNation(Nation nation) {
+		this.nation = nation;
+	}
 
 	//input
 	public void input() {
@@ -60,7 +69,7 @@ public class Person {
 	
 	//infor
 	public void infor() {
-		System.out.println("-------");
+		System.out.println("----------------");
 		System.out.println("RECONFIRM INFORMATION PERSON !!!");
 		System.out.println("id_Person: " + id + "| " + "name_Person: " + name + "| " + "age_Person: " + age);
 	}
