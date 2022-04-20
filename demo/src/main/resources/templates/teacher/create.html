@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Teacher</title>
+</head>
+<body>
+	<form th:action="@{/teacher/create}" method="post">
+	  <label>id:</label>
+	  <br> <input type="number" name="id" value="">
+	  <br> <label>name:</label>
+	  <br> <input type="text" name="name" value="">
+	  <br> <button type="submit">Create</button>
+	</form>
+	
+	<p th:text="${msg}"></p>
+	<!--  <p th:text="@{msg}"></p> -->
+</body>
+</html>

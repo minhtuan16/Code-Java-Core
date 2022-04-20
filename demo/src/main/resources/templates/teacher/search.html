@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div th:each="teacher:${list}">
+		<p>
+			<span>ID:</span>
+			<span th:text="${teacher.id}"></span>
+		</p>
+		
+		<p>
+			<span>Name:</span>
+			<span th:text="${teacher.name}"></span>
+		</p>
+		
+		<p>
+			<a th:href="@{'/teacher/delete?id=' + ${teacher.id}}">Delete</a>
+		</p>
+		
+		<p>---------------</p>
+	</div>
+</body>
+</html>
