@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create department</title>
+</head>
+<body>
+
+	<form th:action="@{/ticket/create}" method="post">
+		<br><label>ID:</label> 
+		<br><input type= "text" name="id">
+		
+		<br><label>So dien thoai:</label> 
+		<br><input type= "number" name="sdt">
+		
+		<br><label>Y kien khach hang:</label> 
+		<br><input type= "text" name="ykien">
+		
+		<br><label>Thoi gian tiep nhan:</label> 
+		<br><input type= "date" placeholder="dd/MM/yyyy" name="tiepnhan">
+		
+		<br><label>Noi dung xu ly:</label> 
+		<br><input type= "text" name="nd_xuly">
+		
+		<br><label>Trang thai:</label> 
+		<br><input type= "text" name="trangthai">
+		
+		<br><label>Thoi gian xu ly:</label> 
+		<br><input type= "date" placeholder="dd/MM/yyyy" name="tg_xuly">
+		
+		
+		<br><button type="submit">Create</button>
+	</form>
+	
+	<a th:href="@{/department/search}">Tim kiem</a>
+</body>
+</html>
